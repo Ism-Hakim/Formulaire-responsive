@@ -5,42 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Formualaire</title>
+    <title>Formulaire</title>
 </head>
 <body>
     <div class="container">
         <div class="title">Inscription</div>
-        <form action="">
+        <form action="" id="inscriptionForm">
             <div class="user-details">
                 <div class="input-box">
-                    <span class="details">Nom complet</span>
-                    <input type="text" placeholder="Entrez votre nom" required>
+                    <label for="nomComplet" class="details">Nom complet</label>
+                    <input type="text" placeholder="Entrez votre nom" required id="nomComplet">
                 </div>
 
                 <div class="input-box">
-                    <span class="details">Nom d'utilisateur</span>
-                    <input type="text" placeholder="Entrez votre nom d'utilisateur" required>
+                    <label for="nomUtilisateur" class="details">Nom d'utilisateur</label>
+                    <input type="text" placeholder="Entrez votre nom d'utilisateur" required id="nomUtilisateur">
                 </div>
 
                 <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Entrez votre email" required>
-                </div>
-
-                
-                <div class="input-box">
-                    <span class="details">Numéro de téléphone</span>
-                    <input type="text" placeholder="Entrez votre numéro" required>
+                    <label for="email" class="details">Email</label>
+                    <input type="text" placeholder="Entrez votre email" required id="email">
                 </div>
 
                 <div class="input-box">
-                    <span class="details">Mot de passe</span>
-                    <input type="password" placeholder="Entrez votre mot de passe" required>
+                    <label for="numeroTelephone" class="details">Numéro de téléphone</label>
+                    <input type="text" placeholder="Entrez votre numéro" required id="numeroTelephone">
                 </div>
 
                 <div class="input-box">
-                    <span class="details">Confirmez mot de passe</span>
-                    <input type="password" placeholder="Confimez mot de passe" required>
+                    <label for="motDePasse" class="details">Mot de passe</label>
+                    <input type="password" placeholder="Entrez votre mot de passe" required id="motDePasse">
+                </div>
+
+                <div class="input-box">
+                    <label for="confirmerMotDePasse" class="details">Confirmez mot de passe</label>
+                    <input type="password" placeholder="Confirmez mot de passe" required id="confirmerMotDePasse">
                 </div>
             </div>
             <div class="detail-genre">
@@ -53,7 +52,7 @@
                         <span class="dot one"></span>
                         <span class="gender">Homme</span>
                     </label>
-                    
+
                     <label for="dot-2">
                         <span class="dot two"></span>
                         <span class="gender">Femme</span>
@@ -66,7 +65,7 @@
                 </div>
             </div>
             <div class="button">
-                <input type="submit"  value="Envoyer">
+                <input type="submit" value="Envoyer">
             </div>
         </form>
     </div>
