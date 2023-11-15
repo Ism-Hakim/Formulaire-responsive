@@ -132,3 +132,18 @@ form .button input {
     border-radius: 5px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .detail-genre .category {
+        width: 100%;
+    }
+}
